@@ -1,0 +1,177 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+body {
+  margin:0px;
+  background-image: url(../images/bg.png);
+  margin-bottom: 100px;
+}
+.flex {
+  position: relative;
+  margin:auto;
+  align-items: center;
+
+  padding: 0px;
+}
+.header {
+  color: #4aaaa5;
+  font-family: 'Georgia', Times, Times New Roman, serif;
+}
+#header {
+  display: flex;
+  border-bottom: #CCCCCC solid;
+  background-color: #fff;
+  justify-content: center;
+  min-width: 800px;
+  overflow: auto;
+}
+#namebox {
+margin-top: 10px;
+background: #4aaaa5;
+color: #fff;
+padding: 20px;
+float: left;
+font-family: 'Georgia', Times, Times New Roman, serif;
+}
+.cform {
+  width:100$
+  margin: 10px;
+
+}
+#menu {
+  float:left;
+  margin-left: 475px;
+  margin-top: 30px;
+
+}
+#menu > a {
+  margin: 0px 15px;
+  color: #696b70;
+  text-decoration: none;
+}
+#menu > a:hover {
+  color: #CCCCCC;
+  text-decoration: underline;
+}
+h1 {
+  color: #4aaaa5;
+  font-size: 24px;
+  font-family: 'Georgia', Times, Times New Roman, serif;
+}
+h2 {
+  color: #4aaaa5;
+  font-size: 18px;
+  text-align: center;
+  font-family: 'Georgia', Times, Times New Roman, serif;
+}
+#main {
+  clear: left;
+	overflow:auto;
+  display: flex;
+  justify-content:center;
+  margin: 20px auto;
+  width: 960px;
+}
+#content {
+  width: 650px;
+  border: #dddddd solid;
+  padding: 20px;
+  background-color: #fff;
+  text-align: justify;
+  margin-bottom: auto;
+
+}
+#connect {
+  width: 310px;
+  border: #dddddd solid;
+  margin-left: 20px;
+  padding: 20px;
+  background-color: #fff;
+  align-items: center;
+  margin-bottom: auto;
+}
+.con {
+  padding: 5px;
+  width: 32%;
+  opacity: 0.5;
+
+}
+
+.con:hover {
+  opacity: 1;
+}
+#contxt {
+  width: 100%;
+}
+#submitbutton {
+  background-color: #4aaaa5;
+  color: white;
+  margin-top: 10px;
+  padding: 10px;
+}
+input.cform {
+  width: 100%;
+}
+#footer {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  clear: both;
+  height: 75px;
+  vertical-align: middle;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #666666;
+  border-top: #4aaaa5 solid 8px;
+  color: #dddddd;
+}
+#bioimg {
+  float: left;
+  width: 25%;
+  margin-right:10px;
+}
+
+.portfolio_label {
+  border: gray dashed;
+  position: absolute;
+  bottom: 40px;
+  font-size: Large;
+  background-color: #4aaaa5;
+  text-align: center;
+  padding: 15px;
+  color: #fff;
+  width: 100%;
+  font-family: 'Georgia', Times, Times New Roman, serif;
+}
+.portfolio_container {
+  position: relative;
+  display: inline-block;
+  width: 248px;
+  height: 240px;
+  margin: 20px;
+
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.portfolio_container > a {
+  width: 100%;
+  height: 100%;
+}
+#rpgimg {
+  background-image: url("http://lorempixel.com/200/200/nature"); /* people transport technics sports */
+
+}
+#hangmanimg {
+  background-image: url("http://lorempixel.com/200/200/sports/");
+}
+#triviaimg {
+  background-image: url("http://lorempixel.com/200/200/cats/");
+}
+#rpsimg {
+  background-image: url("http://lorempixel.com/200/200/technics/");
+}
+#riwimg {
+  background-image: url("http://lorempixel.com/200/200/people/");
+}
