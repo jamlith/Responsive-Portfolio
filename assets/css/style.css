@@ -7,15 +7,7 @@ body {
   background-image: url(../images/bg.png);
   margin-bottom: 100px;
 }
-.flex {
-  /*
-  position: relative;
-  margin:auto;
-  align-items: center;
 
-  padding: 0px;
-  */
-}
 
 #navbar {
   border-bottom: #CCCCCC solid;
@@ -165,7 +157,6 @@ input.cform {
   height: 150px;
   margin-right:10px;
   border: black solid;
-  background: url("../images/james.jpg") content-box no-repeat;
 }
 
 .portfolio_label {
@@ -275,12 +266,13 @@ input.cform {
     width: 200px;
     height: 200px;
     margin: 0 auto 10px auto;
+
   }
   #content {
     max-width: 640px;
     min-width: 350px;
     width: 100%;
-    
+    text-align: center;
   }
   #footer {
     position: static;
