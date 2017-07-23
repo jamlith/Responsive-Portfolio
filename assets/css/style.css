@@ -222,10 +222,9 @@ input.cform {
   #content {
       float: none;
       /* position: static; */
-      width: 950px;
+      width: 645px;
       display: inherit;
       margin: 10px auto;
-      max-width: 100%;
   }
   #wrapper {
     clear: both;
@@ -251,12 +250,37 @@ input.cform {
 }
 @media only screen and (max-width: 640px) {
   /* 640px and under... */
-  #navlinks {
-    margin-right: 50px;
-
-  }
   #title {
-    margin-left: 50px;
+    float: none;
+    min-width: 350px;
+    max-width: 640px;
+    width: 100%;
+    text-align: center;
+    margin: 10px 0px auto 0px;
+  }
+  #navlinks {
+    float: none;
+    min-width: 350px;
+    max-width: 640px;
+    width: 100%;
+    text-align: center;
+    margin: 10px 0px auto 0px;
+  }
+  #navbar {
+    overflow:visible;
+  }
+  #bioimg {
+    float: none;
+    display: block;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 10px auto;
+  }
+  #content {
+    max-width: 640px;
+    min-width: 350px;
+    width: 100%;
+    
   }
   #footer {
     position: static;
