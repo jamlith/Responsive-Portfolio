@@ -8,99 +8,131 @@ body {
   margin-bottom: 100px;
 }
 .flex {
+  /*
   position: relative;
   margin:auto;
   align-items: center;
 
   padding: 0px;
+  */
 }
-.header {
-  color: #4aaaa5;
-  font-family: 'Georgia', Times, Times New Roman, serif;
-}
-#header {
-  display: flex;
+
+#navbar {
   border-bottom: #CCCCCC solid;
   background-color: #fff;
-  justify-content: center;
-  min-width: 800px;
+  width: 100%;
   overflow: auto;
+  position:static;
+  top:0px;
 }
-#namebox {
-margin-top: 10px;
-background: #4aaaa5;
-color: #fff;
-padding: 20px;
-float: left;
-font-family: 'Georgia', Times, Times New Roman, serif;
+#title {
+  margin: 10px auto 0px 200px;
+  background: #4aaaa5;
+  color: #fff;
+  padding: 20px;
+  float: left;
+  font-family: 'Georgia', Times, Times New Roman, serif;
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: cubic-bezier();
 }
-.cform {
-  width:100$
-  margin: 10px;
+
+#navlinks {
+  float:right;
+  margin: 25px 200px auto auto;
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: cubic-bezier();
 
 }
-#menu {
-  float:left;
-  margin-left: 475px;
-  margin-top: 30px;
-
-}
-#menu > a {
+#navlinks > a {
   margin: 0px 15px;
   color: #696b70;
   text-decoration: none;
 }
-#menu > a:hover {
+#navlinks > a:hover {
   color: #CCCCCC;
-  text-decoration: underline;
 }
 h1 {
   color: #4aaaa5;
   font-size: 24px;
-  font-family: 'Georgia', Times, Times New Roman, serif;
+  font-family: 'Georgia', Times, 'Times New Roman', serif;
 }
 h2 {
   color: #4aaaa5;
   font-size: 18px;
   text-align: center;
-  font-family: 'Georgia', Times, Times New Roman, serif;
+  font-family: 'Georgia', Times, 'Times New Roman', serif;
 }
-#main {
-  clear: left;
-	overflow:auto;
-  display: flex;
-  justify-content:center;
-  margin: 20px auto;
+#wrapper {
+  clear: both;
   width: 960px;
+  margin: 10px auto auto auto;
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: cubic-bezier();
+}
+#wrapper::before {
+  content: "";
+  display:inline-block;
+  vertical-align=top;
+  height: 100%;
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: cubic-bezier();
 }
 #content {
-  width: 650px;
+  /*float: left;*/
+  display: inline-block;
+  max-width: 645px;
+  min-width: 450px;
   border: #dddddd solid;
   padding: 20px;
+  margin: auto 10px auto auto;
   background-color: #fff;
   text-align: justify;
-  margin-bottom: auto;
-
+  overflow: auto;
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: cubic-bezier();
 }
-#connect {
+#socialicons {
+  /*float: right;*/
+  display:inline-block;
+  /*max-width: 310px;*/
+  /*min-width: 250px;*/
   width: 310px;
+  position: absolute;
   border: #dddddd solid;
-  margin-left: 20px;
+  margin: 0px auto auto auto;
   padding: 20px;
   background-color: #fff;
   align-items: center;
-  margin-bottom: auto;
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: cubic-bezier();
 }
-.con {
-  padding: 5px;
-  width: 32%;
-  opacity: 0.5;
+.cform {
+  width:100%
+  margin: 10px;
 
 }
+/* Class for Social Media links, initially 50% opacity, 100% on hover... */
+  .con {
+    padding: 5px;
+    width: 32%;
+    opacity: 0.5;
+    transition-property: opacity;
+    transition-duration: .3s;
+    transition-timing-function: linear;
+  }
 
-.con:hover {
-  opacity: 1;
-}
+  .con:hover {
+    opacity: 1;
+
+  }
+
+
 #contxt {
   width: 100%;
 }
@@ -129,8 +161,11 @@ input.cform {
 }
 #bioimg {
   float: left;
-  width: 25%;
+  width: 150px;
+  height: 150px;
   margin-right:10px;
+  border: black solid;
+  background: url("../images/james.jpg") content-box no-repeat;
 }
 
 .portfolio_label {
@@ -175,6 +210,55 @@ input.cform {
 #riwimg {
   background-image: url("http://lorempixel.com/200/200/people/");
 }
-@media only screen and (max-width: 400px) {
-  /* 400px and under... */
+/* Add screen rules for <960px, <768px, <640px */
+@media only screen and (max-width: 960px) {
+  /* 960px and under... */
+  #socialicons {
+    float: none;
+    position: static;
+    display: inherit;
+
+  }
+  #content {
+      float: none;
+      /* position: static; */
+      width: 950px;
+      display: inherit;
+      margin: 10px auto;
+      max-width: 100%;
+  }
+  #wrapper {
+    clear: both;
+    width: auto;
+    margin: 0px 10px 10px 10px;
+}
+  #navlinks {
+    margin-right:100px;
+  }
+  #title {
+    margin-left: 100px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  /* 768px and under... */
+  #navlinks {
+    margin-right: 50px;
+
+  }
+  #title {
+    margin-left: 50px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  /* 640px and under... */
+  #navlinks {
+    margin-right: 50px;
+
+  }
+  #title {
+    margin-left: 50px;
+  }
+  #footer {
+    position: static;
+  }
 }
