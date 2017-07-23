@@ -175,3 +175,6 @@ input.cform {
 #riwimg {
   background-image: url("http://lorempixel.com/200/200/people/");
 }
+@media only screen and (max-width: 400px) {
+  /* 400px and under... */
+}
